@@ -37,7 +37,12 @@ class menu {
 
   }
 
+
   conteContra() {
+
+
+
+
     var contenido = document.getElementById('window-content');
     var titulo = document.getElementById('window-title')
     titulo.innerHTML = 'Contraseña'
@@ -53,7 +58,11 @@ class menu {
       + '<label class = "cont">Nombre</label>'
       + '<input class = "texto" type = text >'
       + '<label class = "cont">Sucursal</label>'
-      + '<input class = "texto" type = text >'
+      + '<select class = "texto" id="mySelect">'
+      + '<option>Ricza</option>'
+      + '<option>Servicocinas</option>'
+      + '</select>'
+      
       + '<label class = "cont">Comentario</label>'
       + '<input class = "texto" type = text >'
       + '</div>'
@@ -71,33 +80,20 @@ class menu {
       + '<div class = "detalle">'
       + '<table>'
       + '<tr>'
-      + '<th>Columna 1</th>'
-      + '<th>Columna 2</th>'
-      + '<th>Columna 3</th>'
-      + '<th>Columna 4</th>'
-      + '<th>Columna 5</th>'
-      + '<th>Columna 6</th>'
+      + '<th><p class = "id">id Linea</p></th>'
+      + '<th><p Class = "no_fac">No. Factura</p></th>'
+      + '<th><p Class = "fecha">Fecha</p></th>'
+      + '<th><p Class = "monto">Monto</p></th>'
+      + '<th class = "agregar"><button>Agregar linea</button></th>'
       + '</tr>'
       + '<tr>'
-      + '<td>Dato 1</td>'
-      + '<td>Dato 2</td>'
-      + '<td>Dato 3</td>'
-      + '<td>Dato 4</td>'
+      + '<td><p class = "id">Dato 1</p></td>'
+      + '<td><p class = "no_fac">Dato 2</p></td>'
+      + '<td><p class = "fecha">Dato 3</p></td>'
+      + '<td><p class = "monto">Dato 4</p></td>'
       + '<td>'
-      + '<button>Botón 1</button>'
-      + '</td>'
-      + '<td>'
-      + '<button>Botón 1</button>'
-      + '</td>'
-      + '</tr>'
-      + '<tr>'
-      + '<td>Dato 6</td>'
-      + '<td>Dato 7</td>'
-      + '<td>Dato 8</td>'
-      + '<td>Dato 9</td>'
-      + '<td>Dato 10</td>'
-      + '<td>'
-      + '<button>Botón 2</button>'
+      + '<button class = "boton1">Editar</button>'
+      + '<button class = "boton2">Borrar</button>'
       + '</td>'
       + '</tr>'
       + '</table>'

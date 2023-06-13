@@ -4,10 +4,10 @@
     
     box-sizing: border-box;
     font-family: arial;
-    background-color: rgb(26, 89, 165);
+    background-color: white;
     background-repeat: no-repeat;
-    background-position: top;
-    background-size: 900px;
+    background-position: 55% 10rem;
+    background-size: 200px;
     
 }
 body {
@@ -153,7 +153,7 @@ body {
     background-color: rgba(39, 50, 201, 0.37);
   }
 /*/////////////////////////////////////////////////////////////*/
-/******************ventana*************************************/
+/******************  VENTANAS  *************************************/
   .movable {
     position: absolute;
     top: 50%;
@@ -187,16 +187,16 @@ body {
     transform: translate(-50%, -50%);
     width: 700px;
     height: 500px;
-    background-color: #f5f5f5;
+    background-color: white;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.795);
   }
   
   .window-header {
     padding: 10px;
-    background-color: #ddd;
     border-bottom: 1px solid #ccc;
     border-radius: 5px 5px 0 0;
     position: relative;
@@ -226,11 +226,10 @@ body {
     height: 200px;
   }
 
- 
+ /****************************************  CONTRASEÑA **************************************************/
   .datos1{
     position: fixed;
     left: 0;
-    background-color: #017bab;
     height: 35%;
     width: 45%;
     margin-top: 1%;
@@ -240,7 +239,6 @@ body {
   .datos2{
     position: fixed;
     right: 0;
-    background-color: #07ab01;
     height: 35%;
     width: 45%;
     margin-top: 1%;
@@ -249,33 +247,109 @@ body {
   }
   .datos1 .cont,.datos2 .cont{
     padding: 3px;
-    margin: 3px;
+    margin: 2px;
     width: 35%;
     font-size: 10pt;
-    background-color: #ada9a9;
     display: inline-block;
+  }
+  .datos1 .texto, .datos2 .texto{
+    border-radius: 5px;
+    border:1px solid rgb(209, 209, 209);
+    background-color: #f3f2f2;
+    width: 160px;
   }
 
-  .encabezado{
-    position: fixed;
-    right: 0;
-    height: 40%;
-    margin: 3%,3%,3%;
-    display: inline-block;
-    background-color: coral;
-  }
+
+
   .detalle{
     position: fixed;
     left: 2%;
     bottom: 3%;
-    background-color: #8901ab;
     height: 50%;
     width: 96%;
-    margin-top: 1%;
-    margin-right: 2%;
     display: inline-block;
-    border: 1px solid red;
+    
   }
+  .detalle table{
+    margin-left: 80px;
+    margin-top: 0;
+  }
+.detalle th{
+    
+    height: 20px;
+    font-size: 10pt;
+    display: inline-block;
+    border-bottom: 3px solid black;
+    padding: 4px;
+    display: inline-block;
+}
+.detalle td{
+    
+    height: 20px;
+    font-size: 10pt;
+    display: inline-block;
+    border-bottom: 1px solid rgb(133, 132, 132);
+    padding: 4px;
+    display: inline-block;
+}
+
+.detalle .id{
+    text-align: left;
+    margin-top: 3px;
+    width: 60px;
+    display: inline-block;
+    
+}
+.detalle .no_fac{
+    text-align: left;
+    margin-top: 3px;
+    width: 120px;
+    display: inline-block;
+}
+.detalle .fecha{
+    text-align: left;
+    margin-top: 3px;
+    width: 90px;
+    display: inline-block;
+}
+.detalle .monto{
+    text-align: left;
+    margin-top: 3px;
+    width: 80px;
+    display: inline-block;
+}
+.detalle .agregar{
+    border-bottom: none;
+}
+
+.detalle .boton1{
+    background-color: rgb(69, 205, 230);
+    border-radius: 4px;
+    border-style: none;
+    height: 23px;
+}
+.detalle .boton1:hover{
+    background-color: rgb(59, 176, 197);
+    border-radius: 4px;
+    border-style: none;
+    height: 23px;
+}
+.detalle .boton2{
+    background-color: rgb(252, 6, 6);
+    color: white;
+    border-radius: 4px;
+    border-style: none;
+    height: 23px;
+}
+.detalle .boton2:hover{
+    background-color: rgb(204, 2, 2);
+    border-radius: 4px;
+    border-style: none;
+    height: 23px;
+}
+
+
+
 
   
 
