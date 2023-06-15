@@ -1,11 +1,27 @@
+import Contra from './Contra.js';
+const i = new Contra();
 
-class menu {
-  menu() {
-  }
+document.addEventListener("DOMContentLoaded", function () {
+  const menuItems = document.querySelectorAll(".menu > li");
 
-  abrir() {
 
-    const movableDiv = document.getElementById("movableDiv");
+  menuItems.forEach(function (item) {
+    const submenu = item.querySelector(".submenu");
+    const menuItemLink = item.querySelector("a");
+
+    menuItemLink.addEventListener("click", function (event) {
+      event.preventDefault();
+      submenu.classList.toggle("active");
+    });
+  });
+});
+
+
+
+
+
+document.getElementById('producto1').addEventListener('click', function (){
+  const movableDiv = document.getElementById("movableDiv");
     const closeButton = document.getElementById("closeButton");
 
     movableDiv.style.display = "inline-block";
@@ -34,22 +50,21 @@ class menu {
     closeButton.addEventListener("click", function () {
       movableDiv.style.display = "none";
     });
-
-  }
-
-
-  conteContra() {
+    /*conteContra();*/
+});
 
 
 
+/*
 
+ function conteContra() {
     var contenido = document.getElementById('window-content');
     var titulo = document.getElementById('window-title')
     titulo.innerHTML = 'Contraseña'
     contenido.innerHTML =
       '<div class = "encabezado">'
       + '<div class = "datos1">'
-      + '<label class = "cont">No de Documento</label>'
+      + '<label class = "cont" id = "nodoc">No de Documento</label>'
       + '<input class = "texto" type = text >'
       + '<label class = "cont">Código</label>'
       + '<input class = "texto" type = text >'
@@ -99,34 +114,16 @@ class menu {
       + '</table>'
       + '</div>'
       ;
-  }
-}
-
-
-
-document.addEventListener("DOMContentLoaded", function () {
-  const menuItems = document.querySelectorAll(".menu > li");
-
-
-  menuItems.forEach(function (item) {
-    const submenu = item.querySelector(".submenu");
-    const menuItemLink = item.querySelector("a");
-
-    menuItemLink.addEventListener("click", function (event) {
-      event.preventDefault();
-      submenu.classList.toggle("active");
-    });
-  });
-});
+  }*/
 
 
 
 
-function abrirContra() {
 
-  const i = new menu();
-  i.abrir();
-  i.conteContra();
 
-}
+
+
+
+
+
 
